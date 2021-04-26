@@ -1,0 +1,141 @@
+*{
+  box-sizing:border-box;
+  padding:0px;
+  margin:0px;
+}
+
+body{
+  font-family:'Oswald',sans-serif;
+  font-size: 16px;
+}
+
+a{
+  text-decoration: none;
+  color:#f8f5f2;
+}
+
+header{
+  border-width: 100%;
+  background:#000b29;
+  display:grid;
+}
+
+.botz{
+  width:270px;
+  height: 94px;
+  grid-column: 1;
+}
+header h1{
+  color:#f8f5f2;
+  grid-column: 2;
+  margin-top: 35px;
+}
+
+.conteiner{
+  height: 750px;
+  display:grid;
+  grid-gap:5px;
+  background-color:#54A8C0;
+  padding: 10px;
+}
+
+
+.socios{
+  grid-column:1 / span 2;
+  grid-row:1 / span 2;
+}
+.actividades{
+  grid-column:3 /span 2;
+  grid-row:1;
+}
+.recursos{
+  grid-column:3 /span 2 ;
+  grid-row:2;
+}
+.propuesta{
+  grid-column:5 /span 2 ;
+  grid-row:1/span 2;
+}
+.relacion{
+  grid-column:7 /span 2 ;
+  grid-row:1;
+}
+.canales{
+  grid-column:7 /span 2 ;
+  grid-row:2;
+}
+.segmento{
+  grid-column:9 /span 2 ;
+  grid-row:1/span 2;
+}
+.estructura{
+  grid-column:1 /span 5 ;
+  grid-row:3;
+}
+.fuentes{
+  grid-column:6 /span 5 ;
+  grid-row:3;
+}
+.conteiner img{
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+}
+
+.grid-item{
+  background-color: #239946;
+  font: size 30px;
+  position:relative;
+  text-align: center;
+  display: grid;
+  transform-style: preserve-3d;
+  transition:.9s ease;
+}
+.grid-item:hover .adelante{
+  transform:rotateX(-180deg);
+}
+.grid-item:hover .atras{
+  transform: rotateX(0deg);
+}
+.adelante, .atras {
+  width:100%;
+  height:100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.atras{
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:#54A8C0;
+  padding:10%;
+}
+
+.sub1{
+  margin: 40% auto auto auto;
+  padding: 15%;
+}
+.sub2{
+  margin: 10% auto auto auto;
+}
+.sub3{
+  margin: 5% auto auto auto;
+}
+p{
+  color:#f8f5f2;
+  font-size: 125%;
+}
+
+footer{
+  text-align: center;
+  background:#000b29;
+  padding: 20px;
+}
+footer h5{
+  color:#f8f5f2;
+}
+
+
